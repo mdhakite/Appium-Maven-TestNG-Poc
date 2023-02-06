@@ -1,0 +1,22 @@
+<suite name="DemoPOCSuite" parallel="tests" thread-count="2">
+
+	<test name="AppiumTest1">
+		<classes>
+			<class name="AppiumDemo2"></class>
+			<methods>
+				<include name="methodOne" />
+			</methods>
+		</classes>
+	</test>
+
+	<test name="AppiumTest2">
+		<classes>
+			<class name="AppiumDemo2">
+				<methods>
+					<include name="methodTwo" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
